@@ -35,9 +35,8 @@ Since the company is just embarking on this project, the scope has been kept to 
 ### Approach:
 While attempting to forecast sales, it is advisable to keep the following question in mind.
 
-1. Is the sales data non-stationary? If so, how do you find it and correct it?
-2. Is the data cointegrated? Which variables are cointegrated and how do you find them?
-3. What is the impact of the number of customers on sales?
-4. What is the impact of promo and promo2 variables on sales? How do you measure it?
-5. Forecast sales for the next 6 weeks? Report the accuracy of the model using MAPE.
+1. Perform decomposition on Store level of the data to identify trends and seasonality.
+2. ADF test to test the Stationarity of the Time Series.
+3. ACF and PCF to understand the Order of lags to be used.
+4. Use VAR and VARMAX to forecast the next 6 weeks of Sales.
 
